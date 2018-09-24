@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
     private fun clicks() {
         btnGreet.setOnClickListener {
             if (txtName.text.isEmpty() && txtSurname.text.isEmpty()){
+                cleanData()
                 Toast.makeText(this,getString(R.string.you_must_fill_the_fields), Toast.LENGTH_SHORT).show()
             }else{
                 when(chkPolite.isChecked){
@@ -31,11 +32,16 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnReset.setOnClickListener {
-            txtName.text = null
-            txtSurname.text = null
-            chkPolite.isChecked = false
+            cleanData()
         }
 
+    }
+
+    private fun cleanData() {
+        txtName.text = null
+        txtSurname.text = null
+        lblGreet.text = ""
+        chkPolite.isChecked = false
     }
 
 }
