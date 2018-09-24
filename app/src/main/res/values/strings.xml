@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ASR-PR01-Greet</string>
+    <string name="you_must_fill_the_fields">You must fill the fields</string>
+    <string name="name">Name</string>
+    <string name="write_here_your_name">Write here your name...</string>
+    <string name="surname">Surname</string>
+    <string name="write_here_your_surname">Write here your surname...</string>
+    <string name="politely">Politely</string>
+    <string name="greet">GREET</string>
+    <string name="reset">RESET</string>
 </resources>
